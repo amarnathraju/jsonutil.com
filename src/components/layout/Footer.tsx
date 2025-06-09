@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-900 text-slate-300 py-12 mt-16">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
+    <footer className="bg-slate-900 text-slate-300 py-8 lg:py-12 mt-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-6 h-6 bg-gradient-to-r from-blue-400 to-purple-400 rounded flex items-center justify-center">
                 <span className="text-white font-bold text-xs">JS</span>
@@ -58,9 +58,9 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="border-t border-slate-700 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
-            <div className="mb-4 md:mb-0">
+        <div className="border-t border-slate-700 mt-6 lg:mt-8 pt-6 lg:pt-8">
+          <div className="flex flex-col lg:flex-row justify-between items-center text-sm text-slate-400 space-y-4 lg:space-y-0">
+            <div className="text-center lg:text-left">
               <p>Made with ❤️ for developers worldwide. All tools work offline and respect your privacy.</p>
             </div>
             <div className="flex space-x-6">
