@@ -12,6 +12,7 @@ import Converter from "./pages/Converter";
 import Diff from "./pages/Diff";
 import Path from "./pages/Path";
 import Schema from "./pages/Schema";
+import Documentation from "./pages/Documentation";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
 
@@ -33,6 +34,7 @@ const App = () => (
               <Route path="/diff" element={<Diff />} />
               <Route path="/path" element={<Path />} />
               <Route path="/schema" element={<Schema />} />
+              <Route path="/docs" element={<Documentation />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>

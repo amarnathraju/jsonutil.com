@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           
           <Navigation />
           
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center">
             <Button
               variant="ghost"
               size="sm"
@@ -31,13 +31,6 @@ const Header: React.FC = () => {
               className="w-9 h-9 p-0"
             >
               {theme === 'light' ? '🌙' : '☀️'}
-            </Button>
-            <Button 
-              variant="default" 
-              size="sm"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
-            >
-              Go Premium
             </Button>
           </div>
         </div>

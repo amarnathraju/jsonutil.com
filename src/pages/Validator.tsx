@@ -75,9 +75,19 @@ const Validator = () => {
         <h1 className="text-3xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-4">
           JSON Validator
         </h1>
-        <p className="text-slate-600 dark:text-slate-300">
-          Validate JSON syntax with detailed error reporting and real-time feedback.
+        <p className="text-slate-600 dark:text-slate-300 mb-4">
+          Validate JSON syntax with detailed error reporting and real-time feedback. Our JSON validator helps you identify and fix syntax errors in your JSON data with precise error messages and helpful suggestions.
         </p>
+        <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-6">
+          <h3 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Features:</h3>
+          <ul className="text-sm text-blue-700 dark:text-blue-300 space-y-1">
+            <li>• Real-time JSON syntax validation</li>
+            <li>• Detailed error reporting with line and column numbers</li>
+            <li>• Statistical analysis of JSON structure</li>
+            <li>• Helpful suggestions for common errors</li>
+            <li>• Support for large JSON files</li>
+          </ul>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -87,28 +97,36 @@ const Validator = () => {
             {/* Input Section */}
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center justify-between">
-                  JSON Input
-                  <div className="flex gap-2">
-                    <Button variant="outline" size="sm" onClick={clearInput}>
-                      Clear
-                    </Button>
-                    <Button size="sm" onClick={validateJSON}>
-                      Validate
-                    </Button>
-                  </div>
-                </CardTitle>
+                <CardTitle>JSON Input</CardTitle>
                 <CardDescription>
                   Paste your JSON data here to validate
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <Textarea
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder="Enter JSON data..."
                   className="min-h-96 font-mono text-sm"
                 />
+                
+                {/* Main Action Button */}
+                <div className="flex justify-center">
+                  <Button 
+                    size="lg" 
+                    onClick={validateJSON}
+                    className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 px-8"
+                  >
+                    Validate JSON
+                  </Button>
+                </div>
+                
+                {/* Secondary Actions */}
+                <div className="flex gap-2 justify-center pt-2">
+                  <Button variant="outline" size="sm" onClick={clearInput}>
+                    Clear
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
@@ -175,7 +193,7 @@ const Validator = () => {
                   </div>
                 ) : (
                   <div className="text-center text-slate-500 py-8">
-                    Enter JSON data and click "Validate" to see results
+                    Enter JSON data and click "Validate JSON" to see results
                   </div>
                 )}
               </CardContent>
@@ -205,6 +223,39 @@ const Validator = () => {
                   </div>
                 ))}
               </div>
+            </CardContent>
+          </Card>
+
+          {/* Documentation Section */}
+          <Card className="mt-6">
+            <CardHeader>
+              <CardTitle>📚 JSON Validation Guide</CardTitle>
+            </CardHeader>
+            <CardContent className="prose prose-sm max-w-none dark:prose-invert">
+              <h3>What is JSON Validation?</h3>
+              <p>JSON (JavaScript Object Notation) validation ensures your data follows the correct syntax rules. Valid JSON must have:</p>
+              <ul>
+                <li>Properly quoted strings (double quotes only)</li>
+                <li>Correctly nested objects and arrays</li>
+                <li>No trailing commas</li>
+                <li>Proper escape sequences for special characters</li>
+              </ul>
+              
+              <h3>Common JSON Errors</h3>
+              <ul>
+                <li><strong>Missing quotes:</strong> Property names must be in double quotes</li>
+                <li><strong>Trailing commas:</strong> Remove commas after the last element</li>
+                <li><strong>Single quotes:</strong> Use double quotes for strings</li>
+                <li><strong>Unclosed brackets:</strong> Ensure all brackets and braces are properly closed</li>
+              </ul>
+              
+              <h3>Best Practices</h3>
+              <ul>
+                <li>Use consistent indentation for readability</li>
+                <li>Validate JSON before using it in applications</li>
+                <li>Use meaningful property names</li>
+                <li>Keep nesting levels reasonable for performance</li>
+              </ul>
             </CardContent>
           </Card>
         </div>
