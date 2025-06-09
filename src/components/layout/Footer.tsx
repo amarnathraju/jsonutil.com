@@ -38,22 +38,22 @@ const Footer: React.FC = () => {
             <h3 className="font-semibold text-white mb-3">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/docs" className="hover:text-blue-400 transition-colors">Documentation</Link></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">JSON Tutorial</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Best Practices</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">API Guide</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Examples</a></li>
+              <li><a href="https://www.json.org/json-en.html" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">JSON Tutorial</a></li>
+              <li><Link to="/docs#best-practices" className="hover:text-blue-400 transition-colors">Best Practices</Link></li>
+              <li><Link to="/docs#tools" className="hover:text-blue-400 transition-colors">API Guide</Link></li>
+              <li><Link to="/docs#getting-started" className="hover:text-blue-400 transition-colors">Examples</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-semibold text-white mb-3">Support</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Help Center</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Contact Support</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Feature Requests</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Bug Reports</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Terms of Service</a></li>
+              <li><Link to="/docs#faq" className="hover:text-blue-400 transition-colors">Help Center</Link></li>
+              <li><a href="mailto:support@jsonutil.com" className="hover:text-blue-400 transition-colors">Contact Support</a></li>
+              <li><a href="https://github.com/jsonutil/feature-requests" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Feature Requests</a></li>
+              <li><a href="https://github.com/jsonutil/bug-reports" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Bug Reports</a></li>
+              <li><a href="/privacy" className="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
+              <li><a href="/terms" className="hover:text-blue-400 transition-colors">Terms of Service</a></li>
             </ul>
           </div>
         </div>
@@ -64,9 +64,9 @@ const Footer: React.FC = () => {
               <p>Made with ❤️ for developers worldwide. All tools work offline and respect your privacy.</p>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="hover:text-blue-400 transition-colors">Status</a>
-              <a href="#" className="hover:text-blue-400 transition-colors">Changelog</a>
-              <a href="#" className="hover:text-blue-400 transition-colors">GitHub</a>
+              <a href="https://status.jsonutil.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Status</a>
+              <a href="https://github.com/jsonutil/changelog" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Changelog</a>
+              <a href="https://github.com/jsonutil" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">GitHub</a>
             </div>
           </div>
         </div>
