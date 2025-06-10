@@ -25,21 +25,21 @@
     <!-- Google AdSense Script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8435757825577995" crossorigin="anonymous"></script>
 
-    <!-- Single Page Apps for GitHub Pages -->
+    <!-- GitHub Pages SPA Routing -->
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
+      (function() {
+        var redirect = function() {
+          var path = window.location.pathname;
+          if (path.startsWith('/jsonutil.com')) {
+            path = path.replace('/jsonutil.com', '');
+          }
+          if (path !== '/' && !path.startsWith('/?')) {
+            window.location.replace('/jsonutil.com/#' + path);
+          }
+        };
+        redirect();
+        window.addEventListener('popstate', redirect);
+      })();
     </script>
   </head>
 
