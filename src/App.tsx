@@ -14,8 +14,10 @@ import Schema from "./pages/Schema";
 import Documentation from "./pages/Documentation";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
+import Cookies from "./pages/Cookies";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
+import CookieConsent from "./components/CookieConsent";
 
 const queryClient = new QueryClient();
 
@@ -38,8 +40,10 @@ const App = () => (
               <Route path="/docs" element={<Documentation />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="/privacy" element={<Privacy />} />
+              <Route path="/cookies" element={<Cookies />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+            <CookieConsent />
           </Layout>
         </BrowserRouter>
       </TooltipProvider>
