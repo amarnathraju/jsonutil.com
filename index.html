@@ -25,20 +25,19 @@
     <!-- Google AdSense Script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8435757825577995" crossorigin="anonymous"></script>
 
-    <!-- GitHub Pages SPA Routing -->
+    <!-- Hash-based Routing Handler -->
     <script type="text/javascript">
       (function() {
-        var redirect = function() {
+        // Handle direct URL access
+        if (window.location.pathname !== '/' && !window.location.hash) {
           var path = window.location.pathname;
+          // Remove /jsonutil.com from the path if it exists
           if (path.startsWith('/jsonutil.com')) {
             path = path.replace('/jsonutil.com', '');
           }
-          if (path !== '/' && !path.startsWith('/?')) {
-            window.location.replace('/jsonutil.com/#' + path);
-          }
-        };
-        redirect();
-        window.addEventListener('popstate', redirect);
+          // Redirect to the hash-based URL
+          window.location.replace(window.location.origin + '/jsonutil.com/#' + path);
+        }
       })();
     </script>
     <script type="module" crossorigin src="/jsonutil.com/assets/index-DtfybLiP.js"></script>
