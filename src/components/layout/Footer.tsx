@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -50,10 +49,8 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm">
               <li><Link to="/docs#faq" className="hover:text-blue-400 transition-colors">Help Center</Link></li>
               <li><a href="mailto:support@jsonutil.com" className="hover:text-blue-400 transition-colors">Contact Support</a></li>
-              <li><a href="https://github.com/jsonutil/feature-requests" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Feature Requests</a></li>
-              <li><a href="https://github.com/jsonutil/bug-reports" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Bug Reports</a></li>
-              <li><a href="/privacy" className="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms" className="hover:text-blue-400 transition-colors">Terms of Service</a></li>
+              <li><Link to="/privacy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="hover:text-blue-400 transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
@@ -65,8 +62,6 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex space-x-6">
               <a href="https://status.jsonutil.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Status</a>
-              <a href="https://github.com/jsonutil/changelog" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Changelog</a>
-              <a href="https://github.com/jsonutil" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">GitHub</a>
             </div>
           </div>
         </div>

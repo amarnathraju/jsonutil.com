@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,6 +12,8 @@ import Diff from "./pages/Diff";
 import Path from "./pages/Path";
 import Schema from "./pages/Schema";
 import Documentation from "./pages/Documentation";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
 
@@ -35,6 +36,8 @@ const App = () => (
               <Route path="/path" element={<Path />} />
               <Route path="/schema" element={<Schema />} />
               <Route path="/docs" element={<Documentation />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy" element={<Privacy />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>

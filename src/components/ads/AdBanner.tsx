@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -37,12 +36,18 @@ const AdBanner: React.FC<AdBannerProps> = ({ position, className }) => {
   const ad = getAdContent();
 
   return (
-    <div className={cn(
-      "flex items-center justify-center bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg my-4",
-      position === 'header' || position === 'footer' ? 'h-24' : 'h-64',
-      position === 'sidebar' ? 'w-full max-w-sm' : 'w-full max-w-4xl mx-auto',
-      className
-    )}>
+    <div 
+      className={cn(
+        "hidden", // Hide all ads for now
+        position === 'header' || position === 'footer' ? 'h-24' : 'h-64',
+        position === 'sidebar' ? 'w-full max-w-sm' : 'w-full max-w-4xl mx-auto',
+        className
+      )}
+      data-ad-client="ca-pub-8435757825577995"
+      data-ad-slot="XXXXXXXXXX" // Replace with your AdSense ad slot
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    >
       <div className="text-center text-slate-400 dark:text-slate-500">
         <div className="text-sm font-medium mb-1">{ad.text}</div>
         <div className="text-xs opacity-60">{ad.size}</div>
