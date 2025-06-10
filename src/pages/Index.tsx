@@ -64,7 +64,7 @@ const Index = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
           <Link to="/validator">
             <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-              Get Started Free
+              Get Started
             </Button>
           </Link>
           <Link to="/docs">

@@ -80,10 +80,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center text-sm text-slate-400 space-y-4 lg:space-y-0">
             <div className="text-center lg:text-left">
               <p>Made with ❤️ for developers worldwide. All tools work offline and respect your privacy.</p>
-            </div>
-            <div className="flex space-x-6">
-              <a href="https://status.jsonutil.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Status</a>
-            </div>
+            </div>       
           </div>
         </div>
       </div>
