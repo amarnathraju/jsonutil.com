@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,7 +5,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { validator } from '@/utils/jsonProcessors/validator';
-import AdBanner from '@/components/ads/AdBanner';
 
 const Validator = () => {
   const [input, setInput] = useState('');
@@ -262,8 +260,6 @@ const Validator = () => {
 
         {/* Sidebar with Ad */}
         <div className="lg:col-span-1">
-          <AdBanner position="sidebar" />
-          
           <Card className="mt-6">
             <CardHeader>
               <CardTitle className="text-lg">💡 Pro Tips</CardTitle>

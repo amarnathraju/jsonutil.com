@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -7,7 +6,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from '@/components/ui/collapsible';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import AdBanner from '@/components/ads/AdBanner';
 
 const Converter = () => {
   const [input, setInput] = useState('');
@@ -412,8 +410,6 @@ const Converter = () => {
 
         {/* Sidebar */}
         <div className="lg:col-span-1">
-          <AdBanner position="sidebar" />
-          
           <Card className="mt-6">
             <CardHeader>
               <CardTitle className="text-lg">🔄 Supported Formats</CardTitle>

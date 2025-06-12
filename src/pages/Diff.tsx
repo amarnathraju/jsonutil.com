@@ -1,11 +1,9 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import AdBanner from '@/components/ads/AdBanner';
 
 const Diff = () => {
   const [leftInput, setLeftInput] = useState('');
@@ -265,8 +263,6 @@ const Diff = () => {
 
         {/* Sidebar */}
         <div className="lg:col-span-1">
-          <AdBanner position="sidebar" />
-          
           <Card className="mt-6">
             <CardHeader>
               <CardTitle className="text-lg">🔍 How It Works</CardTitle>

@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -9,7 +8,6 @@ import { Switch } from '@/components/ui/switch';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { formatter } from '@/utils/jsonProcessors/formatter';
-import AdBanner from '@/components/ads/AdBanner';
 
 const Formatter = () => {
   const [input, setInput] = useState('');
@@ -302,8 +300,6 @@ const Formatter = () => {
 
         {/* Sidebar */}
         <div className="lg:col-span-1">
-          <AdBanner position="sidebar" />
-          
           <Card className="mt-6">
             <CardHeader>
               <CardTitle className="text-lg">🎨 Formatting Options</CardTitle>

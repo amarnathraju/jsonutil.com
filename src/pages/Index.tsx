@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import AdBanner from '@/components/ads/AdBanner';
 
 const Index = () => {
   const tools = [
@@ -74,8 +72,6 @@ const Index = () => {
           </Link>
         </div>
       </div>
-
-      <AdBanner position="in-content" />
 
       {/* Tools Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">

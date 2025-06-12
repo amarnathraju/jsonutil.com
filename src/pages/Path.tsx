@@ -1,11 +1,9 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Input } from '@/components/ui/input';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import AdBanner from '@/components/ads/AdBanner';
 
 const Path = () => {
   const [jsonInput, setJsonInput] = useState('');
@@ -234,8 +232,6 @@ const Path = () => {
 
         {/* Sidebar */}
         <div className="lg:col-span-1">
-          <AdBanner position="sidebar" />
-          
           <Card className="mt-6">
             <CardHeader>
               <CardTitle className="text-lg">📝 JSONPath Syntax</CardTitle>

@@ -1,10 +1,8 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
-import AdBanner from '@/components/ads/AdBanner';
 
 const Documentation = () => {
   return (
@@ -18,8 +16,6 @@ const Documentation = () => {
           Learn how to validate, format, convert, and manipulate JSON data effectively.
         </p>
       </div>
-
-      <AdBanner position="in-content" />
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         <div className="lg:col-span-3">
@@ -394,8 +390,6 @@ const Documentation = () => {
 
         {/* Sidebar */}
         <div className="lg:col-span-1">
-          <AdBanner position="sidebar" />
-          
           <Card className="mt-6 sticky top-6">
             <CardHeader>
               <CardTitle className="text-lg">🔗 Quick Navigation</CardTitle>
