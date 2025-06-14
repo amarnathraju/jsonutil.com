@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -15,6 +16,8 @@ import Documentation from "./pages/Documentation";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Cookies from "./pages/Cookies";
+import AboutUs from "./pages/AboutUs"; // Added import
+import ContactUs from "./pages/ContactUs"; // Added import
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
 import CookieConsent from "./components/CookieConsent";
@@ -41,6 +44,8 @@ const App = () => (
               <Route path="/terms" element={<Terms />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/cookies" element={<Cookies />} />
+              <Route path="/about" element={<AboutUs />} /> {/* Added route */}
+              <Route path="/contact" element={<ContactUs />} /> {/* Added route */}
               <Route path="*" element={<NotFound />} />
             </Routes>
             <CookieConsent />
