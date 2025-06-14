@@ -1,6 +1,8 @@
+
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import ScrollToBottom from '../ScrollToBottom';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -14,6 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       <Footer />
+      <ScrollToBottom />
     </div>
   );
 };
