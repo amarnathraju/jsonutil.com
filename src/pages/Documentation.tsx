@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -20,7 +21,7 @@ const Documentation = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         <div className="lg:col-span-3">
           {/* Getting Started */}
-          <Card className="mb-8">
+          <Card className="mb-8" id="getting-started">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-3">
                 🚀 Getting Started with JSON
@@ -121,7 +122,7 @@ const Documentation = () => {
           </Card>
 
           {/* Tool Guides */}
-          <Card className="mb-8">
+          <Card className="mb-8" id="tools">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-3">
                 🛠️ Tool Guides
@@ -228,7 +229,7 @@ const Documentation = () => {
           </Card>
 
           {/* JSON Best Practices */}
-          <Card className="mb-8">
+          <Card className="mb-8" id="best-practices">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-3">
                 📚 JSON Best Practices
@@ -335,7 +336,7 @@ const Documentation = () => {
           </Card>
 
           {/* FAQ */}
-          <Card className="mb-8">
+          <Card className="mb-8" id="faq">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-3">
                 ❓ Frequently Asked Questions
@@ -419,10 +420,10 @@ const Documentation = () => {
               <Separator />
               
               <div className="space-y-2 text-sm">
-                <a href="#getting-started" className="block text-slate-600 dark:text-slate-400 hover:underline">Getting Started</a>
-                <a href="#tools" className="block text-slate-600 dark:text-slate-400 hover:underline">Tool Guides</a>
-                <a href="#best-practices" className="block text-slate-600 dark:text-slate-400 hover:underline">Best Practices</a>
-                <a href="#faq" className="block text-slate-600 dark:text-slate-400 hover:underline">FAQ</a>
+                <Link to="/docs#getting-started" className="block text-slate-600 dark:text-slate-400 hover:underline">Getting Started</Link>
+                <Link to="/docs#tools" className="block text-slate-600 dark:text-slate-400 hover:underline">Tool Guides</Link>
+                <Link to="/docs#best-practices" className="block text-slate-600 dark:text-slate-400 hover:underline">Best Practices</Link>
+                <Link to="/docs#faq" className="block text-slate-600 dark:text-slate-400 hover:underline">FAQ</Link>
               </div>
             </CardContent>
           </Card>
