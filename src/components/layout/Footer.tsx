@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -40,8 +41,7 @@ const Footer: React.FC = () => {
               <li><a href="https://www.json.org/json-en.html" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">JSON Tutorial</a></li>
               <li><Link to="/docs#best-practices" className="hover:text-blue-400 transition-colors">Best Practices</Link></li>
               <li><Link to="/docs#tools" className="hover:text-blue-400 transition-colors">API Guide</Link></li>
-              <li><Link to="/docs#getting-started" className="hover:text-blue-400 transition-colors">Examples</Link></li>
-              <li><Link to="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li> {/* Added About Us link */}
+              <li><Link to="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li>
             </ul>
           </div>
           
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
             <h3 className="font-semibold text-white mb-3">Support</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/docs#faq" className="hover:text-blue-400 transition-colors">Help Center</Link></li>
-              <li><Link to="/contact" className="hover:text-blue-400 transition-colors">Contact Us</Link></li> {/* Changed from mailto to link */}
+              <li><Link to="/contact" className="hover:text-blue-400 transition-colors">Contact Us</Link></li>
               <li><Link to="/privacy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-blue-400 transition-colors">Terms of Service</Link></li>
             </ul>
