@@ -17,9 +17,9 @@ const ScrollToBottom = () => {
       const atBottom = scrollTop + windowHeight >= documentHeight - 100;
       setIsAtBottom(atBottom);
       
-      // Show button when user is not at the very top or very bottom
-      const notAtTop = scrollTop > 100;
-      setIsVisible(notAtTop);
+      // Show button when page is scrollable (not when page is too short to scroll)
+      const pageIsScrollable = documentHeight > windowHeight;
+      setIsVisible(pageIsScrollable);
     };
 
     window.addEventListener('scroll', toggleVisibility);
