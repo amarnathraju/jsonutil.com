@@ -224,6 +224,52 @@ const Documentation = () => {
                     <Badge className="bg-orange-600 hover:bg-orange-700">Try Diff Tool →</Badge>
                   </Link>
                 </div>
+
+                <div className="bg-indigo-50 dark:bg-indigo-900/20 p-6 rounded-lg">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">?</div>
+                    <h3 className="text-lg font-semibold text-indigo-800 dark:text-indigo-200">JSONPath Tester</h3>
+                    <Badge variant="outline" className="text-indigo-600 border-indigo-600">Free</Badge>
+                  </div>
+                  <p className="text-sm text-indigo-700 dark:text-indigo-300 mb-4">
+                    Query and extract data from JSON structures using JSONPath expressions.
+                  </p>
+                  <div className="space-y-2 text-sm text-indigo-700 dark:text-indigo-300">
+                    <h4 className="font-medium">How to use:</h4>
+                    <ul className="space-y-1 pl-4">
+                      <li>1. Input your JSON data to query</li>
+                      <li>2. Enter JSONPath expression (e.g., $.store.book[*].title)</li>
+                      <li>3. Execute query to see matching results</li>
+                      <li>4. Use quick queries for common patterns</li>
+                    </ul>
+                  </div>
+                  <Link to="/path" className="inline-block mt-4">
+                    <Badge className="bg-indigo-600 hover:bg-indigo-700">Try JSONPath →</Badge>
+                  </Link>
+                </div>
+
+                <div className="bg-yellow-50 dark:bg-yellow-900/20 p-6 rounded-lg">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-8 h-8 bg-yellow-600 rounded-lg flex items-center justify-center text-white font-bold">📋</div>
+                    <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200">JSON Schema Generator</h3>
+                    <Badge variant="outline" className="text-yellow-600 border-yellow-600">Free</Badge>
+                  </div>
+                  <p className="text-sm text-yellow-700 dark:text-yellow-300 mb-4">
+                    Generate JSON Schema from sample data with intelligent type inference and format detection.
+                  </p>
+                  <div className="space-y-2 text-sm text-yellow-700 dark:text-yellow-300">
+                    <h4 className="font-medium">How to use:</h4>
+                    <ul className="space-y-1 pl-4">
+                      <li>1. Paste sample JSON data</li>
+                      <li>2. Click "Generate Schema" to analyze structure</li>
+                      <li>3. Review generated JSON Schema Draft 7</li>
+                      <li>4. Copy schema for validation or documentation</li>
+                    </ul>
+                  </div>
+                  <Link to="/schema" className="inline-block mt-4">
+                    <Badge className="bg-yellow-600 hover:bg-yellow-700">Try Schema Generator →</Badge>
+                  </Link>
+                </div>
               </div>
             </CardContent>
           </Card>
