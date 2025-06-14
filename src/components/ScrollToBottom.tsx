@@ -1,20 +1,25 @@
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const ScrollToBottom = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isAtBottom, setIsAtBottom] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // Show button when user is not at the bottom of the page
       const scrollTop = window.pageYOffset;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       
-      // Show button if user is not within 100px of the bottom
-      setIsVisible(scrollTop + windowHeight < documentHeight - 100);
+      // Check if user is at the bottom (within 100px)
+      const atBottom = scrollTop + windowHeight >= documentHeight - 100;
+      setIsAtBottom(atBottom);
+      
+      // Show button when user is not at the very top or very bottom
+      const notAtTop = scrollTop > 100;
+      setIsVisible(notAtTop);
     };
 
     window.addEventListener('scroll', toggleVisibility);
@@ -23,11 +28,20 @@ const ScrollToBottom = () => {
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: 'smooth'
-    });
+  const handleScroll = () => {
+    if (isAtBottom) {
+      // Scroll to top
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    } else {
+      // Scroll to bottom
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
   };
 
   if (!isVisible) {
@@ -36,12 +50,16 @@ const ScrollToBottom = () => {
 
   return (
     <Button
-      onClick={scrollToBottom}
+      onClick={handleScroll}
       size="icon"
       className="fixed bottom-6 right-6 z-50 bg-blue-600 hover:bg-blue-700 text-white shadow-lg rounded-full w-12 h-12"
-      aria-label="Scroll to bottom"
+      aria-label={isAtBottom ? "Scroll to top" : "Scroll to bottom"}
     >
-      <ChevronDown className="h-5 w-5" />
+      {isAtBottom ? (
+        <ChevronUp className="h-5 w-5" />
+      ) : (
+        <ChevronDown className="h-5 w-5" />
+      )}
     </Button>
   );
 };
