@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -30,7 +29,7 @@ const Footer: React.FC = () => {
               <li><Link to="/converter" className="hover:text-blue-400 transition-colors">JSON Converter</Link></li>
               <li><Link to="/diff" className="hover:text-blue-400 transition-colors">JSON Diff Tool</Link></li>
               <li><Link to="/path" className="hover:text-blue-400 transition-colors">JSONPath Tester</Link></li>
-              <li><Link to="/schema" className="hover:text-blue-400 transition-colors">Schema Generator</Link></li>
+              <li><Link to="/schema" className="hover:text-blue-400 transition-colors">JSON Schema Generator</Link></li>
             </ul>
           </div>
           
@@ -48,7 +47,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-semibold text-white mb-3">Support</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/docs#faq" className="hover:text-blue-400 transition-colors">Help Center</Link></li>
+              <li><Link to="/docs#faq" className="hover:text-blue-400 transition-colors">FAQ</Link></li>
               <li><Link to="/contact" className="hover:text-blue-400 transition-colors">Contact Us</Link></li>
               <li><Link to="/privacy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-blue-400 transition-colors">Terms of Service</Link></li>
