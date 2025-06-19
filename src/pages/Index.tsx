@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -110,6 +109,23 @@ const Index = () => {
             </CardContent>
           </Card>
         ))}
+      </div>
+
+      {/* Blog Section */}
+      <div className="bg-white/30 dark:bg-slate-800/30 backdrop-blur-sm rounded-2xl p-4 lg:p-6 xl:p-8 mb-12 lg:mb-16">
+        <div className="text-center">
+          <h2 className="text-xl lg:text-2xl xl:text-3xl font-bold mb-4 text-slate-800 dark:text-slate-200">
+            Learn More About JSON
+          </h2>
+          <p className="text-slate-600 dark:text-slate-400 mb-6 max-w-2xl mx-auto">
+            Explore our comprehensive guides, tutorials, and best practices for working with JSON data.
+          </p>
+          <Link to="/blog">
+            <Button size="lg" variant="outline" className="bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700">
+              Visit Our Blog
+            </Button>
+          </Link>
+        </div>
       </div>
 
       {/* Features Section */}

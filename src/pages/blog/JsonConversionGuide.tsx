@@ -396,17 +396,17 @@ features:
 
 # Convert all JSON files in a directory to CSV
 for file in *.json; do
-  base_name=$(basename "$file" .json)
-  echo "Converting $file to ${base_name}.csv"
+  filename=$(basename "$file" .json)
+  echo "Converting $file to ${filename}.csv"
   # Use your preferred conversion tool here
-  json2csv "$file" > "${base_name}.csv"
+  json2csv "$file" > "${filename}.csv"
 done
 
 # Convert to XML with validation
 for file in *.json; do
-  base_name=$(basename "$file" .json)
-  echo "Converting $file to ${base_name}.xml"
-  json2xml "$file" | xmllint --format - > "${base_name}.xml"
+  filename=$(basename "$file" .json)
+  echo "Converting $file to ${filename}.xml"
+  json2xml "$file" | xmllint --format - > "${filename}.xml"
 done`}
                   </pre>
                 </div>
