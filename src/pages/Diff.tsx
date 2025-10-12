@@ -119,11 +119,21 @@ const Diff = () => {
     <div className="max-w-7xl mx-auto">
       <div className="mb-8">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">
-          JSON Diff
+          JSON Diff Tool
         </h1>
-        <p className="text-slate-600 dark:text-slate-300">
-          Compare JSON objects and visualize differences with detailed analysis.
+        <p className="text-slate-600 dark:text-slate-300 mb-4">
+          Compare JSON objects and visualize differences with detailed analysis. Our JSON diff tool helps you identify changes between two JSON structures, making it perfect for API testing, configuration management, and debugging.
         </p>
+        <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg mb-6">
+          <h3 className="font-semibold text-orange-800 dark:text-orange-200 mb-2">Key Features:</h3>
+          <ul className="text-sm text-orange-700 dark:text-orange-300 space-y-1">
+            <li>• Deep comparison of nested objects and arrays</li>
+            <li>• Visual highlighting of additions, deletions, and modifications</li>
+            <li>• Path tracking to identify exact location of changes</li>
+            <li>• Side-by-side comparison view</li>
+            <li>• Export diff results</li>
+          </ul>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -188,7 +198,7 @@ const Diff = () => {
           </div>
 
           {/* Results Section */}
-          <Card>
+          <Card className="mb-6">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 Differences Found
@@ -257,6 +267,41 @@ const Diff = () => {
                   }
                 </div>
               )}
+            </CardContent>
+          </Card>
+
+          {/* Comprehensive Guide Section */}
+          <Card>
+            <CardHeader>
+              <CardTitle>📚 Complete JSON Diff Guide</CardTitle>
+            </CardHeader>
+            <CardContent className="prose prose-sm max-w-none dark:prose-invert">
+              <h3>What is JSON Diff?</h3>
+              <p>
+                JSON Diff (difference) tools compare two JSON objects and identify all changes between them. This is essential for API version comparison, configuration management, data synchronization debugging, code review analysis, and testing API responses against expected results.
+              </p>
+
+              <h3>Understanding Change Types</h3>
+              <p><strong>Added Properties:</strong> Properties that exist in the second JSON but not in the first. These represent new fields or data that have been introduced. For example, adding a phone number field to a user object.</p>
+              <p><strong>Removed Properties:</strong> Properties that exist in the first JSON but not in the second. These indicate deleted or deprecated fields, such as removing an outdated fax number field from contact information.</p>
+              <p><strong>Modified Values:</strong> Properties where the key exists in both objects but the value has changed. This is the most common type of change, like updating an age from 30 to 31, or changing an email address.</p>
+
+              <h3>Common Use Cases</h3>
+              <p><strong>API Testing:</strong> Compare actual API responses with expected mock data to ensure your API returns correct values. This is crucial for automated testing and continuous integration.</p>
+              <p><strong>Configuration Management:</strong> Track changes in configuration files across different environments (development, staging, production). Identify what settings differ between environments to prevent deployment issues.</p>
+              <p><strong>Data Migration Validation:</strong> When migrating data between systems, compare source and destination records to ensure data integrity. Verify that all fields were transferred correctly.</p>
+              <p><strong>Version Control:</strong> Review changes to JSON configuration files before committing to version control. Understand exactly what has changed in your data schemas or API contracts.</p>
+
+              <h3>Best Practices</h3>
+              <ul>
+                <li>Normalize data first - ensure both JSON objects are in the same format</li>
+                <li>Consider property order - in standard JSON, object property order doesn't matter, but array order does</li>
+                <li>Handle null vs undefined - be aware that missing properties and null values are different</li>
+                <li>Use deep comparison tools that compare nested structures, not just top-level properties</li>
+                <li>Document significant changes for future reference</li>
+                <li>Pay attention to type changes (e.g., string to number)</li>
+                <li>Use path notation to quickly locate changes in deeply nested structures</li>
+              </ul>
             </CardContent>
           </Card>
         </div>

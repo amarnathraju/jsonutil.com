@@ -48,6 +48,26 @@ const Blog = () => {
       featured: false
     },
     {
+      id: 'json-schema-guide',
+      title: 'Understanding JSON Schema: A Complete Guide',
+      description: 'Master JSON Schema for data validation, documentation, and code generation. Learn types, constraints, and real-world applications.',
+      category: 'Tutorial',
+      readTime: '11 min read',
+      publishDate: '2024-01-12',
+      author: 'JSONUtil Team',
+      featured: true
+    },
+    {
+      id: 'json-api-guide',
+      title: 'JSON in APIs: Best Practices and Common Patterns',
+      description: 'Essential patterns for JSON APIs including response structure, pagination, error handling, and security considerations.',
+      category: 'Best Practices',
+      readTime: '13 min read',
+      publishDate: '2024-01-09',
+      author: 'JSONUtil Team',
+      featured: false
+    },
+    {
       id: 'json-beginners-guide',
       title: 'JSON for Beginners: Everything You Need to Know',
       description: 'A comprehensive introduction to JSON for new developers, covering syntax, data types, and practical examples.',

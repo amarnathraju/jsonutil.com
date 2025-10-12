@@ -136,9 +136,19 @@ const Schema = () => {
         <h1 className="text-3xl font-bold bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent mb-4">
           JSON Schema Generator
         </h1>
-        <p className="text-slate-600 dark:text-slate-300">
-          Generate JSON Schema from sample data with intelligent type inference.
+        <p className="text-slate-600 dark:text-slate-300 mb-4">
+          Generate JSON Schema from sample data with intelligent type inference. Our schema generator automatically creates JSON Schema Draft 7 compliant schemas from your JSON data, perfect for API documentation, data validation, and code generation.
         </p>
+        <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg mb-6">
+          <h3 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-2">Key Features:</h3>
+          <ul className="text-sm text-yellow-700 dark:text-yellow-300 space-y-1">
+            <li>• Automatic type detection and inference</li>
+            <li>• Support for nested objects and arrays</li>
+            <li>• String format recognition (email, URL, date-time)</li>
+            <li>• Required property identification</li>
+            <li>• JSON Schema Draft 7 compliance</li>
+          </ul>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -260,6 +270,55 @@ const Schema = () => {
                   </ul>
                 </div>
               </div>
+            </CardContent>
+          </Card>
+
+          {/* Comprehensive Schema Guide */}
+          <Card className="mt-6">
+            <CardHeader>
+              <CardTitle>📚 Complete JSON Schema Guide</CardTitle>
+            </CardHeader>
+            <CardContent className="prose prose-sm max-w-none dark:prose-invert">
+              <h3>What is JSON Schema?</h3>
+              <p>
+                JSON Schema is a vocabulary that allows you to annotate and validate JSON documents. It provides a contract for what JSON data is required for a given application and how it should be structured. JSON Schema is used for data validation, documentation, and code generation.
+              </p>
+
+              <h3>Why Use JSON Schema?</h3>
+              <p><strong>Data Validation:</strong> Ensure incoming data meets your requirements before processing. Validate API requests, form submissions, and configuration files automatically.</p>
+              <p><strong>Documentation:</strong> Schemas serve as living documentation for your data structures in a machine-readable format.</p>
+              <p><strong>Code Generation:</strong> Generate TypeScript interfaces, validation functions, and mock data from schemas for consistency.</p>
+              <p><strong>API Contracts:</strong> Define clear contracts between API producers and consumers to prevent integration issues.</p>
+
+              <h3>Core Schema Types</h3>
+              <p><strong>Primitive Types:</strong> string, number, integer, boolean, and null are the basic building blocks with their own validation rules.</p>
+              <p><strong>Object Type:</strong> Represents a JSON object with defined properties, required fields, and additional property rules.</p>
+              <p><strong>Array Type:</strong> Represents arrays with item type definitions, size constraints, and uniqueness requirements.</p>
+              <p><strong>String Formats:</strong> Specify common formats like email, uri, date-time, ipv4, ipv6 for specialized validation.</p>
+
+              <h3>Schema Generation Process</h3>
+              <p>Our generator analyzes your sample JSON through these steps: Type Detection identifies JavaScript types, Format Recognition detects email/URL/date patterns, Structure Analysis maps nested objects and arrays, Requirement Inference marks present properties as required, and Array Handling determines consistent item schemas.</p>
+
+              <h3>Common Use Cases</h3>
+              <p><strong>API Development:</strong> Generate schemas for request/response bodies and use them in OpenAPI specifications.</p>
+              <p><strong>Form Validation:</strong> Create schemas for form data validation in web applications.</p>
+              <p><strong>Configuration Validation:</strong> Validate application configuration files to catch errors early.</p>
+              <p><strong>Database Migration:</strong> Document database schema changes and compare versions.</p>
+              <p><strong>Testing:</strong> Generate mock data based on schemas for comprehensive testing coverage.</p>
+
+              <h3>Best Practices</h3>
+              <ul>
+                <li>Use representative sample data that includes all possible fields and edge cases</li>
+                <li>Review and adjust required properties - not all sample fields may be required</li>
+                <li>Add descriptions and titles to your schema for better documentation</li>
+                <li>Use specific formats (email, uri, date-time) for better validation</li>
+                <li>Set appropriate minimum and maximum values for numbers</li>
+                <li>Add examples to your schema for documentation purposes</li>
+                <li>Version your schemas as your data model evolves</li>
+                <li>Test schemas against various valid and invalid data samples</li>
+                <li>Consider using definitions for reusable schema components</li>
+                <li>Use additionalProperties: false to strictly validate object shapes</li>
+              </ul>
             </CardContent>
           </Card>
         </div>

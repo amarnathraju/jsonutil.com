@@ -114,11 +114,21 @@ const Path = () => {
     <div className="max-w-7xl mx-auto">
       <div className="mb-8">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">
-          JSONPath Query
+          JSONPath Query Tool
         </h1>
-        <p className="text-slate-600 dark:text-slate-300">
-          Execute JSONPath expressions and extract data from complex JSON structures.
+        <p className="text-slate-600 dark:text-slate-300 mb-4">
+          Execute JSONPath expressions and extract data from complex JSON structures. Our JSONPath tester helps you query and navigate through nested JSON data efficiently, making it perfect for data extraction, API response parsing, and JSON data manipulation.
         </p>
+        <div className="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg mb-6">
+          <h3 className="font-semibold text-indigo-800 dark:text-indigo-200 mb-2">Key Features:</h3>
+          <ul className="text-sm text-indigo-700 dark:text-indigo-300 space-y-1">
+            <li>• Support for standard JSONPath expressions</li>
+            <li>• Wildcard and array index operations</li>
+            <li>• Real-time query execution</li>
+            <li>• Multiple result visualization</li>
+            <li>• Quick query templates for common patterns</li>
+          </ul>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -228,6 +238,61 @@ const Path = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Comprehensive JSONPath Guide */}
+          <Card className="mt-6">
+            <CardHeader>
+              <CardTitle>📚 Complete JSONPath Guide</CardTitle>
+            </CardHeader>
+            <CardContent className="prose prose-sm max-w-none dark:prose-invert">
+              <h3>What is JSONPath?</h3>
+              <p>
+                JSONPath is a query language for JSON, similar to XPath for XML. It provides a simple way to extract and manipulate data from JSON documents. JSONPath expressions allow you to navigate through complex nested structures and retrieve specific values or collections of values efficiently.
+              </p>
+
+              <h3>Core Syntax Elements</h3>
+              <p><strong>Root Operator ($):</strong> Represents the root object or array. All JSONPath expressions start with $ to indicate the root element of the JSON document.</p>
+              <p><strong>Dot Notation (.):</strong> Access object properties using dot notation. For example, $.store.book accesses the book property within the store object.</p>
+              <p><strong>Bracket Notation ([]):</strong> Access array elements or object properties. Can be used with numeric indices for arrays ($.books[0]) or property names for objects ($.store['book']).</p>
+              <p><strong>Wildcard (*):</strong> Matches all elements. Use $.store.* to get all properties of the store object, or $.books[*] to get all elements from the books array.</p>
+              <p><strong>Array Slice:</strong> Extract a range of array elements using slice notation. For example, $.books[0:3] returns the first three books.</p>
+
+              <h3>Common JSONPath Patterns</h3>
+              <p><strong>Get all property values:</strong> Use $.store.* to retrieve all values from an object's properties.</p>
+              <p><strong>Get all array elements:</strong> Use $.books[*] to get every item in an array.</p>
+              <p><strong>Get specific array index:</strong> Use $.books[0] to get the first element, or $.books[-1] for the last element.</p>
+              <p><strong>Nested property access:</strong> Chain dot notation like $.store.book[0].title to access deeply nested properties.</p>
+              <p><strong>Filter by value:</strong> More advanced implementations support filters like $.books[?(@.price &lt; 10)] to find books under $10.</p>
+
+              <h3>Real-World Use Cases</h3>
+              <p><strong>API Response Parsing:</strong> Extract specific fields from complex API responses without manually traversing the entire structure. For example, get all user emails from a paginated API response.</p>
+              <p><strong>Configuration File Management:</strong> Query specific settings from large configuration JSON files. Access nested configurations like database credentials or feature flags quickly.</p>
+              <p><strong>Data Transformation:</strong> Extract and reshape data from one JSON format to another. Useful in ETL processes and data migration tasks.</p>
+              <p><strong>Testing and Validation:</strong> Verify that specific values exist in API responses during automated testing. Assert that deeply nested properties have expected values.</p>
+              <p><strong>Log Analysis:</strong> Parse and extract relevant information from JSON-formatted log files. Find specific error messages or trace IDs in large log structures.</p>
+
+              <h3>Best Practices</h3>
+              <ul>
+                <li>Start simple - test basic paths before building complex queries</li>
+                <li>Use wildcards sparingly - they can return large result sets</li>
+                <li>Validate your JSON structure first before querying</li>
+                <li>Document complex queries with comments for maintainability</li>
+                <li>Consider performance with very large JSON documents</li>
+                <li>Test queries with sample data before production use</li>
+                <li>Use specific paths when possible for better performance</li>
+              </ul>
+
+              <h3>Tips for Effective Querying</h3>
+              <ul>
+                <li>Always start your path with $ to indicate the root</li>
+                <li>Use bracket notation when property names contain special characters or spaces</li>
+                <li>Remember that array indices start at 0</li>
+                <li>Combine dot and bracket notation as needed</li>
+                <li>Use our quick query buttons to learn common patterns</li>
+                <li>Test incrementally - build up complex queries step by step</li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Sidebar */}

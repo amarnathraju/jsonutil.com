@@ -30,6 +30,8 @@ import JsonVsXmlComparison from '@/pages/blog/JsonVsXmlComparison';
 import JsonValidationGuide from '@/pages/blog/JsonValidationGuide';
 import JsonFormattingBestPractices from '@/pages/blog/JsonFormattingBestPractices';
 import JsonConversionGuide from '@/pages/blog/JsonConversionGuide';
+import JsonSchemaGuide from '@/pages/blog/JsonSchemaGuide';
+import JsonApiGuide from '@/pages/blog/JsonApiGuide';
 
 import './App.css';
 
@@ -56,6 +58,8 @@ function App() {
               <Route path="/blog/json-validation-guide" element={<JsonValidationGuide />} />
               <Route path="/blog/json-formatting-best-practices" element={<JsonFormattingBestPractices />} />
               <Route path="/blog/json-conversion-guide" element={<JsonConversionGuide />} />
+              <Route path="/blog/json-schema-guide" element={<JsonSchemaGuide />} />
+              <Route path="/blog/json-api-guide" element={<JsonApiGuide />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/about" element={<AboutUs />} />
               <Route path="/contact" element={<ContactUs />} />
