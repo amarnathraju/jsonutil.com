@@ -50,7 +50,7 @@ const FAQ = () => {
       questions: [
         {
           question: "Can I customize the formatting style?",
-          answer: "Yes! Our formatter allows you to customize indentation (2 or 4 spaces, tabs), sort keys alphabetically, and choose between expanded or compact formatting styles."
+          answer: "Yes! Our formatter allows you to customize indentation (2, 4, or 8 spaces), sort keys alphabetically, and choose between expanded or minified formatting styles."
         },
         {
           question: "Does the formatter preserve data types?",
@@ -71,7 +71,7 @@ const FAQ = () => {
         },
         {
           question: "Can I convert nested JSON objects to CSV?",
-          answer: "Yes, our converter can flatten nested JSON structures for CSV conversion. Complex nested objects are converted to dot-notation columns (e.g., 'user.address.city')."
+          answer: "Yes, our converter handles nested JSON for CSV conversion. Complex nested objects are stringified into JSON strings within CSV cells to preserve all data. For truly flat CSV, consider restructuring your JSON first."
         },
         {
           question: "Is the conversion process reversible?",
