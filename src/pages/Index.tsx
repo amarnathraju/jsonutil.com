@@ -55,10 +55,11 @@ const Index = () => {
       <div className="text-center py-8 lg:py-12">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 mb-8">
           <div className="flex-1 max-w-md">
-            <img 
-              src="/lovable-uploads/c41295d1-ed4f-4180-8089-4355f5872821.png" 
-              alt="JSONUtil.com - Your One-Stop Shop for All Things JSON"
+            <img
+              src="/lovable-uploads/c41295d1-ed4f-4180-8089-4355f5872821.png"
+              alt="JSONUtil.com logo and hero image showcasing comprehensive JSON tools for developers including validator, formatter, converter, and more utilities"
               className="w-full h-auto filter dark:brightness-90 dark:contrast-110"
+              loading="eager"
             />
           </div>
           <div className="flex-1 text-left lg:text-left">
