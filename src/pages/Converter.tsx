@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from '@/components/ui/collapsible';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import RelatedContent from '@/components/RelatedContent';
 
 const Converter = () => {
   const [input, setInput] = useState('');
@@ -451,6 +452,9 @@ const Converter = () => {
           </Card>
         </div>
       </div>
+
+      {/* Related Content */}
+      <RelatedContent currentPage="converter" />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
+import RelatedContent from '@/components/RelatedContent';
 
 const Diff = () => {
   const [leftInput, setLeftInput] = useState('');
@@ -352,6 +353,9 @@ const Diff = () => {
           </Card>
         </div>
       </div>
+
+      {/* Related Content */}
+      <RelatedContent currentPage="diff" />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { validator } from '@/utils/jsonProcessors/validator';
+import RelatedContent from '@/components/RelatedContent';
 
 const Validator = () => {
   const [input, setInput] = useState('');
@@ -281,6 +282,9 @@ const Validator = () => {
           </Card>
         </div>
       </div>
+
+      {/* Related Content */}
+      <RelatedContent currentPage="validator" />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Input } from '@/components/ui/input';
 import { Alert, AlertDescription } from '@/components/ui/alert';
+import RelatedContent from '@/components/RelatedContent';
 
 const Path = () => {
   const [jsonInput, setJsonInput] = useState('');
@@ -347,6 +348,9 @@ const Path = () => {
           </Card>
         </div>
       </div>
+
+      {/* Related Content */}
+      <RelatedContent currentPage="path" />
     </div>
   );
 };

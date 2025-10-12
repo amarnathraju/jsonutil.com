@@ -8,6 +8,7 @@ import { Switch } from '@/components/ui/switch';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { formatter } from '@/utils/jsonProcessors/formatter';
+import RelatedContent from '@/components/RelatedContent';
 
 const Formatter = () => {
   const [input, setInput] = useState('');
@@ -338,6 +339,9 @@ const Formatter = () => {
           </Card>
         </div>
       </div>
+
+      {/* Related Content */}
+      <RelatedContent currentPage="formatter" />
     </div>
   );
 };

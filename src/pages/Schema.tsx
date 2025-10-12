@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Alert, AlertDescription } from '@/components/ui/alert';
+import RelatedContent from '@/components/RelatedContent';
 
 const Schema = () => {
   const [jsonInput, setJsonInput] = useState('');
@@ -366,6 +367,9 @@ const Schema = () => {
           </Card>
         </div>
       </div>
+
+      {/* Related Content */}
+      <RelatedContent currentPage="schema" />
     </div>
   );
 };
