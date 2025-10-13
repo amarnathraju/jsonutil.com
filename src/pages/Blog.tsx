@@ -97,30 +97,10 @@ const Blog = () => {
       publishDate: '2024-01-09',
       author: 'JSONUtil Team',
       featured: false
-    },
-    {
-      id: 'json-beginners-guide',
-      title: 'JSON for Beginners: Everything You Need to Know',
-      description: 'A comprehensive introduction to JSON for new developers, covering syntax, data types, and practical examples.',
-      category: 'Beginner',
-      readTime: '15 min read',
-      publishDate: '2024-01-03',
-      author: 'JSONUtil Team',
-      featured: false
-    },
-    {
-      id: 'advanced-json-techniques',
-      title: 'Advanced JSON Manipulation Techniques',
-      description: 'Explore advanced JSON processing techniques, including JSONPath queries, schema validation, and performance optimization.',
-      category: 'Advanced',
-      readTime: '14 min read',
-      publishDate: '2024-01-01',
-      author: 'JSONUtil Team',
-      featured: false
     }
   ];
 
-  const categories = ['All', 'Tutorial', 'Best Practices', 'Tips & Tricks', 'Performance', 'Comparison', 'Beginner', 'Advanced'];
+  const categories = ['All', 'Tutorial', 'Best Practices', 'Tips & Tricks', 'Performance', 'Comparison'];
 
   return (
     <>
