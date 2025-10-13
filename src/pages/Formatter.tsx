@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -86,7 +87,15 @@ const Formatter = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <>
+      <Helmet>
+        <title>JSON Formatter & Beautifier - Free Online JSON Pretty Print Tool | JSONUtil.com</title>
+        <meta name="description" content="Free JSON formatter and beautifier. Format, beautify, and minify JSON with custom indentation. Sort keys, analyze size, copy to clipboard. Works offline, 100% secure in your browser." />
+        <link rel="canonical" href="https://jsonutil.com/#/formatter" />
+        <meta property="og:title" content="JSON Formatter & Beautifier - Free Pretty Print Tool | JSONUtil.com" />
+        <meta property="og:description" content="Free JSON formatter and beautifier. Format, beautify, and minify JSON with custom indentation options." />
+      </Helmet>
+      <div className="max-w-7xl mx-auto">
       <div className="mb-8">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-4">
           JSON Formatter
@@ -343,6 +352,7 @@ const Formatter = () => {
       {/* Related Content */}
       <RelatedContent currentPage="formatter" />
     </div>
+    </>
   );
 };
 

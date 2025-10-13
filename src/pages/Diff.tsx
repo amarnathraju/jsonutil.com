@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -117,7 +118,15 @@ const Diff = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <>
+      <Helmet>
+        <title>JSON Diff Tool - Compare & Find Differences Between JSON Files | JSONUtil.com</title>
+        <meta name="description" content="Free JSON diff and comparison tool. Compare two JSON objects, visualize differences, detect added/removed/modified values. Side-by-side comparison with detailed analysis. Works offline." />
+        <link rel="canonical" href="https://jsonutil.com/#/diff" />
+        <meta property="og:title" content="JSON Diff Tool - Compare JSON Files Online | JSONUtil.com" />
+        <meta property="og:description" content="Free JSON diff and comparison tool. Compare two JSON objects and visualize differences with detailed analysis." />
+      </Helmet>
+      <div className="max-w-7xl mx-auto">
       <div className="mb-8">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">
           JSON Diff Tool
@@ -357,6 +366,7 @@ const Diff = () => {
       {/* Related Content */}
       <RelatedContent currentPage="diff" />
     </div>
+    </>
   );
 };
 

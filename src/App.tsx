@@ -32,6 +32,9 @@ import JsonFormattingBestPractices from '@/pages/blog/JsonFormattingBestPractice
 import JsonConversionGuide from '@/pages/blog/JsonConversionGuide';
 import JsonSchemaGuide from '@/pages/blog/JsonSchemaGuide';
 import JsonApiGuide from '@/pages/blog/JsonApiGuide';
+import JsonToolsForBeginners from '@/pages/blog/JsonToolsForBeginners';
+import JsonDebuggingTips from '@/pages/blog/JsonDebuggingTips';
+import JsonPerformanceOptimization from '@/pages/blog/JsonPerformanceOptimization';
 
 import './App.css';
 
@@ -60,6 +63,9 @@ function App() {
               <Route path="/blog/json-conversion-guide" element={<JsonConversionGuide />} />
               <Route path="/blog/json-schema-guide" element={<JsonSchemaGuide />} />
               <Route path="/blog/json-api-guide" element={<JsonApiGuide />} />
+              <Route path="/blog/json-tools-for-beginners" element={<JsonToolsForBeginners />} />
+              <Route path="/blog/json-debugging-tips" element={<JsonDebuggingTips />} />
+              <Route path="/blog/json-performance-optimization" element={<JsonPerformanceOptimization />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/about" element={<AboutUs />} />
               <Route path="/contact" element={<ContactUs />} />

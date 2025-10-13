@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -69,7 +70,15 @@ const Validator = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <>
+      <Helmet>
+        <title>JSON Validator - Free Online JSON Syntax Checker & Error Detector | JSONUtil.com</title>
+        <meta name="description" content="Free JSON validator with detailed error reporting. Check JSON syntax, detect errors with line numbers, get fix suggestions, and analyze JSON structure. Fast, secure validation in your browser." />
+        <link rel="canonical" href="https://jsonutil.com/#/validator" />
+        <meta property="og:title" content="JSON Validator - Free Online JSON Syntax Checker | JSONUtil.com" />
+        <meta property="og:description" content="Free JSON validator with detailed error reporting. Check JSON syntax, detect errors with line numbers, and get fix suggestions." />
+      </Helmet>
+      <div className="max-w-7xl mx-auto">
       <div className="mb-8">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-4">
           JSON Validator
@@ -286,6 +295,7 @@ const Validator = () => {
       {/* Related Content */}
       <RelatedContent currentPage="validator" />
     </div>
+    </>
   );
 };
 

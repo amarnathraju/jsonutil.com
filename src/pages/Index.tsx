@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -50,7 +51,16 @@ const Index = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <>
+      <Helmet>
+        <title>Free Online JSON Tools - Validator, Formatter, Converter | JSONUtil.com</title>
+        <meta name="description" content="Free JSON tools for developers: validate JSON syntax, format and beautify JSON data, convert between formats, compare JSON files, and more. Fast, secure, works offline. No registration required." />
+        <link rel="canonical" href="https://jsonutil.com/" />
+        <meta property="og:title" content="Free Online JSON Tools - Validator, Formatter, Converter | JSONUtil.com" />
+        <meta property="og:description" content="Free JSON tools for developers: validate JSON syntax, format and beautify JSON data, convert between formats, compare JSON files, and more." />
+        <meta property="og:url" content="https://jsonutil.com/" />
+      </Helmet>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Hero Section with Logo */}
       <div className="text-center py-8 lg:py-12">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 mb-8">
@@ -165,6 +175,7 @@ const Index = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

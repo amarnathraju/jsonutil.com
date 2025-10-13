@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -112,7 +113,15 @@ const Path = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <>
+      <Helmet>
+        <title>JSONPath Tester - Query & Extract Data from JSON | JSONUtil.com</title>
+        <meta name="description" content="Free JSONPath tester and query tool. Extract data from complex JSON structures using JSONPath expressions. Test queries, view results instantly. Supports wildcards and nested paths." />
+        <link rel="canonical" href="https://jsonutil.com/#/path" />
+        <meta property="og:title" content="JSONPath Tester - Query JSON Data Online | JSONUtil.com" />
+        <meta property="og:description" content="Free JSONPath tester. Extract data from complex JSON structures using JSONPath expressions with instant results." />
+      </Helmet>
+      <div className="max-w-7xl mx-auto">
       <div className="mb-8">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">
           JSONPath Query Tool
@@ -352,6 +361,7 @@ const Path = () => {
       {/* Related Content */}
       <RelatedContent currentPage="path" />
     </div>
+    </>
   );
 };
 

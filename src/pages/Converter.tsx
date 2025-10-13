@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -182,7 +183,15 @@ const Converter = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <>
+      <Helmet>
+        <title>JSON Converter - Convert JSON to CSV, XML, YAML, TypeScript | JSONUtil.com</title>
+        <meta name="description" content="Free JSON converter tool. Convert JSON to CSV, XML, YAML, TypeScript interfaces instantly. Support for arrays, nested objects, and complex data structures. Fast and secure in your browser." />
+        <link rel="canonical" href="https://jsonutil.com/#/converter" />
+        <meta property="og:title" content="JSON Converter - Convert JSON to CSV, XML, YAML | JSONUtil.com" />
+        <meta property="og:description" content="Free JSON converter tool. Convert JSON to CSV, XML, YAML, TypeScript interfaces instantly." />
+      </Helmet>
+      <div className="max-w-7xl mx-auto">
       <div className="mb-8">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
           JSON Converter
@@ -456,6 +465,7 @@ const Converter = () => {
       {/* Related Content */}
       <RelatedContent currentPage="converter" />
     </div>
+    </>
   );
 };
 

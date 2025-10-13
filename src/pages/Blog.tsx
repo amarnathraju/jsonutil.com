@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Clock, User, Calendar } from 'lucide-react';
@@ -7,6 +8,36 @@ import { Link } from 'react-router-dom';
 
 const Blog = () => {
   const blogPosts = [
+    {
+      id: 'json-tools-for-beginners',
+      title: 'JSON Tools for Beginners: Complete Guide to Working with JSON Data',
+      description: 'Learn how to work with JSON data using free online tools. Complete beginner\'s guide covering JSON validation, formatting, conversion, and best practices.',
+      category: 'Tutorial',
+      readTime: '10 min read',
+      publishDate: '2024-01-15',
+      author: 'JSONUtil Team',
+      featured: true
+    },
+    {
+      id: 'json-debugging-tips',
+      title: '10 JSON Debugging Tips Every Developer Should Know',
+      description: 'Master JSON debugging with expert tips. Learn how to fix common errors, validate syntax, and troubleshoot parsing issues quickly.',
+      category: 'Tips & Tricks',
+      readTime: '8 min read',
+      publishDate: '2024-01-16',
+      author: 'JSONUtil Team',
+      featured: true
+    },
+    {
+      id: 'json-performance-optimization',
+      title: 'JSON Performance Optimization: Speed Up Parsing and Reduce File Size',
+      description: 'Learn how to optimize JSON performance. Reduce file sizes, speed up parsing, compress data efficiently, and improve API response times.',
+      category: 'Performance',
+      readTime: '12 min read',
+      publishDate: '2024-01-17',
+      author: 'JSONUtil Team',
+      featured: true
+    },
     {
       id: 'json-vs-xml-comparison',
       title: 'JSON vs XML: Which Data Format Should You Choose?',
@@ -89,10 +120,19 @@ const Blog = () => {
     }
   ];
 
-  const categories = ['All', 'Tutorial', 'Best Practices', 'Comparison', 'Beginner', 'Advanced'];
+  const categories = ['All', 'Tutorial', 'Best Practices', 'Tips & Tricks', 'Performance', 'Comparison', 'Beginner', 'Advanced'];
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <>
+      <Helmet>
+        <title>JSON Development Blog - Tutorials, Tips & Best Practices | JSONUtil.com</title>
+        <meta name="description" content="Expert JSON tutorials, debugging tips, performance optimization guides, and best practices. Learn how to validate, format, convert JSON data and master JSON development." />
+        <link rel="canonical" href="https://jsonutil.com/#/blog" />
+        <meta property="og:title" content="JSON Development Blog - Tutorials & Tips | JSONUtil.com" />
+        <meta property="og:description" content="Expert JSON tutorials, debugging tips, and best practices for developers." />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      <div className="max-w-7xl mx-auto">
       <div className="mb-8">
         <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
           JSON Development Blog
@@ -219,6 +259,7 @@ const Blog = () => {
         </CardContent>
       </Card>
     </div>
+    </>
   );
 };
 
