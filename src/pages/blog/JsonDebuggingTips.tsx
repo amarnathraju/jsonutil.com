@@ -17,8 +17,8 @@ const JsonDebuggingTips = () => {
         <meta property="og:title" content="10 JSON Debugging Tips Every Developer Should Know | JSONUtil.com" />
         <meta property="og:description" content="Master JSON debugging with these expert tips. Learn how to fix common errors, validate syntax, and troubleshoot parsing issues." />
         <meta property="og:type" content="article" />
-        <meta property="article:published_time" content="2024-01-16T10:00:00Z" />
-        <meta property="article:modified_time" content="2024-01-16T10:00:00Z" />
+        <meta property="article:published_time" content="2025-01-16T10:00:00Z" />
+        <meta property="article:modified_time" content="2025-01-16T10:00:00Z" />
         <meta property="article:author" content="JSONUtil.com Team" />
         <meta property="article:section" content="Tips & Tricks" />
         <meta property="article:tag" content="JSON" />
@@ -28,8 +28,8 @@ const JsonDebuggingTips = () => {
       <BlogArticleSchema
         title="10 JSON Debugging Tips Every Developer Should Know"
         description="Master JSON debugging with these expert tips. Learn how to fix common JSON errors, validate syntax, debug API responses, and troubleshoot parsing issues quickly."
-        datePublished="2024-01-16T10:00:00Z"
-        dateModified="2024-01-16T10:00:00Z"
+        datePublished="2025-01-16T10:00:00Z"
+        dateModified="2025-01-16T10:00:00Z"
         author="JSONUtil.com Team"
         slug="json-debugging-tips"
       />
@@ -38,7 +38,7 @@ const JsonDebuggingTips = () => {
         <header className="mb-8">
           <h1 className="text-4xl font-bold mb-4">10 JSON Debugging Tips Every Developer Should Know</h1>
           <div className="flex items-center gap-4 text-sm text-slate-600 dark:text-slate-400">
-            <time dateTime="2024-01-16">January 16, 2024</time>
+            <time dateTime="2025-01-16">January 16, 2025</time>
             <span>•</span>
             <span>8 min read</span>
           </div>

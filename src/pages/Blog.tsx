@@ -14,7 +14,7 @@ const Blog = () => {
       description: 'Learn how to work with JSON data using free online tools. Complete beginner\'s guide covering JSON validation, formatting, conversion, and best practices.',
       category: 'Tutorial',
       readTime: '10 min read',
-      publishDate: '2024-01-15',
+      publishDate: '2025-01-15',
       author: 'JSONUtil Team',
       featured: true
     },
@@ -24,7 +24,7 @@ const Blog = () => {
       description: 'Master JSON debugging with expert tips. Learn how to fix common errors, validate syntax, and troubleshoot parsing issues quickly.',
       category: 'Tips & Tricks',
       readTime: '8 min read',
-      publishDate: '2024-01-16',
+      publishDate: '2025-01-16',
       author: 'JSONUtil Team',
       featured: true
     },
@@ -34,7 +34,7 @@ const Blog = () => {
       description: 'Learn how to optimize JSON performance. Reduce file sizes, speed up parsing, compress data efficiently, and improve API response times.',
       category: 'Performance',
       readTime: '12 min read',
-      publishDate: '2024-01-17',
+      publishDate: '2025-01-17',
       author: 'JSONUtil Team',
       featured: true
     },
@@ -44,7 +44,7 @@ const Blog = () => {
       description: 'A comprehensive comparison of JSON and XML data formats, their use cases, advantages, and when to choose each one for your projects.',
       category: 'Comparison',
       readTime: '8 min read',
-      publishDate: '2024-01-15',
+      publishDate: '2025-01-15',
       author: 'JSONUtil Team',
       featured: true
     },
@@ -54,7 +54,7 @@ const Blog = () => {
       description: 'Learn how to validate JSON data effectively, understand common validation errors, and implement robust validation in your applications.',
       category: 'Tutorial',
       readTime: '12 min read',
-      publishDate: '2024-01-10',
+      publishDate: '2025-01-10',
       author: 'JSONUtil Team',
       featured: true
     },
@@ -64,7 +64,7 @@ const Blog = () => {
       description: 'Master JSON formatting techniques, understand when to format vs minify, and learn industry best practices for maintainable JSON.',
       category: 'Best Practices',
       readTime: '6 min read',
-      publishDate: '2024-01-08',
+      publishDate: '2025-01-08',
       author: 'JSONUtil Team',
       featured: false
     },
@@ -74,7 +74,7 @@ const Blog = () => {
       description: 'Step-by-step guide on converting JSON to other popular data formats, including practical examples and use cases.',
       category: 'Tutorial',
       readTime: '10 min read',
-      publishDate: '2024-01-05',
+      publishDate: '2025-01-05',
       author: 'JSONUtil Team',
       featured: false
     },
@@ -84,7 +84,7 @@ const Blog = () => {
       description: 'Master JSON Schema for data validation, documentation, and code generation. Learn types, constraints, and real-world applications.',
       category: 'Tutorial',
       readTime: '11 min read',
-      publishDate: '2024-01-12',
+      publishDate: '2025-01-12',
       author: 'JSONUtil Team',
       featured: true
     },
@@ -94,7 +94,7 @@ const Blog = () => {
       description: 'Essential patterns for JSON APIs including response structure, pagination, error handling, and security considerations.',
       category: 'Best Practices',
       readTime: '13 min read',
-      publishDate: '2024-01-09',
+      publishDate: '2025-01-09',
       author: 'JSONUtil Team',
       featured: false
     }

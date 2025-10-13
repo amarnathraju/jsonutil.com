@@ -17,8 +17,8 @@ const JsonPerformanceOptimization = () => {
         <meta property="og:title" content="JSON Performance Optimization: Speed Up Your Applications | JSONUtil.com" />
         <meta property="og:description" content="Learn how to optimize JSON performance. Reduce file sizes, speed up parsing, and improve API response times." />
         <meta property="og:type" content="article" />
-        <meta property="article:published_time" content="2024-01-17T10:00:00Z" />
-        <meta property="article:modified_time" content="2024-01-17T10:00:00Z" />
+        <meta property="article:published_time" content="2025-01-17T10:00:00Z" />
+        <meta property="article:modified_time" content="2025-01-17T10:00:00Z" />
         <meta property="article:author" content="JSONUtil.com Team" />
         <meta property="article:section" content="Performance" />
         <meta property="article:tag" content="JSON" />
@@ -28,8 +28,8 @@ const JsonPerformanceOptimization = () => {
       <BlogArticleSchema
         title="JSON Performance Optimization: Speed Up Parsing and Reduce File Size"
         description="Learn how to optimize JSON performance in web applications. Reduce file sizes, speed up parsing, compress data efficiently, and improve API response times with proven techniques."
-        datePublished="2024-01-17T10:00:00Z"
-        dateModified="2024-01-17T10:00:00Z"
+        datePublished="2025-01-17T10:00:00Z"
+        dateModified="2025-01-17T10:00:00Z"
         author="JSONUtil.com Team"
         slug="json-performance-optimization"
       />
@@ -38,7 +38,7 @@ const JsonPerformanceOptimization = () => {
         <header className="mb-8">
           <h1 className="text-4xl font-bold mb-4">JSON Performance Optimization: Speed Up Parsing and Reduce File Size</h1>
           <div className="flex items-center gap-4 text-sm text-slate-600 dark:text-slate-400">
-            <time dateTime="2024-01-17">January 17, 2024</time>
+            <time dateTime="2025-01-17">January 17, 2025</time>
             <span>•</span>
             <span>12 min read</span>
           </div>
